@@ -1,0 +1,21 @@
+package cc1-clean-code;
+
+
+public enum Figure {
+    BRELAN(28),
+    CARRE(35),
+    FULL(30),
+    GRANDE_SUITE(40),
+    YAMS(50),
+    CHANCE(20);
+
+    private final int score;
+
+    Figure(int score) {
+        this.score = score;
+    }
+
+    public int getScore() {
+        return score;
+    }
+}

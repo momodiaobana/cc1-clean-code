@@ -14,7 +14,6 @@ class DiceRollTest {
 
     @Test
     void testInvalidDiceRoll() {
-        // Vérifie que la liste doit contenir exactement 5 dés
         assertThrows(IllegalArgumentException.class, () -> {
             new DiceRoll(Arrays.asList(1, 2));
         });
